@@ -1,7 +1,11 @@
+![alt text](image-4.png)
+### Materia: Estructura de datos              Nombre: Dennis Cajisaca     
+### Correo: dcajisaca@est.ups.edu.ec
+
 # -- Proyecto Laberinto MVC --
 * -- Descripción del problema --
 El objetivo de este proyecto es desarrollar una aplicación que permita crear y resolver laberintos mediante diferentes algoritmos de búsqueda y recorrido. El usuario puede definir el tamaño del laberinto, seleccionar las celdas transitables o no transitables, establecer puntos de inicio y destino, y elegir entre distintos algoritmos para encontrar una ruta óptima entre esos puntos. 
-* -- Propuesta de solución --
+## -- Propuesta de solución --
 ## Marco teórico 
 DFS (Depth-First Search):
 Algoritmo de búsqueda que explora tanto como sea posible por cada rama antes de retroceder (backtracking). Es recursivo o puede usarse con pila. Puede no ser óptimo para encontrar la ruta más corta, pero es simple y eficiente en memoria.
@@ -38,8 +42,9 @@ BuscadorRuta implementa los algoritmos para encontrar rutas en el laberinto.
 ![alt text](image-3.png)
  
 ## -- Ejemplo de codigo -- 
-* public Ruta buscarDFS() {
+* public Ruta buscarDFS() 
      Obtiene el número de filas y columnas del laberinto
+
     int filas = laberinto.getFilas();
     int columnas = laberinto.getColumnas();
 
