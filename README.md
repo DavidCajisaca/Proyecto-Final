@@ -39,23 +39,23 @@ BuscadorRuta implementa los algoritmos para encontrar rutas en el laberinto.
  
 ## -- Ejemplo de codigo -- 
 * public Ruta buscarDFS() {
-    // Obtiene el número de filas y columnas del laberinto
+     Obtiene el número de filas y columnas del laberinto
     int filas = laberinto.getFilas();
     int columnas = laberinto.getColumnas();
 
-    // Crea una matriz para marcar qué celdas ya fueron visitadas y evitar ciclos
+     Crea una matriz para marcar qué celdas ya fueron visitadas y evitar ciclos
     boolean[][] visitado = new boolean[filas][columnas];
 
-    // Lista para almacenar el camino (ruta) desde el inicio hasta el destino si se encuentra
+     Lista para almacenar el camino (ruta) desde el inicio hasta el destino si se encuentra
     List<Punto> ruta = new ArrayList<>();
 
-    // Llama a la función recursiva que realiza la búsqueda en profundidad desde el punto inicial
-    // Si la búsqueda tiene éxito, retorna la ruta encontrada
+     Llama a la función recursiva que realiza la búsqueda en profundidad desde el punto inicial
+     Si la búsqueda tiene éxito, retorna la ruta encontrada
     if(buscarDFSRec(laberinto.getInicio(), visitado, ruta)) {
         return new Ruta(ruta);
     }
 
-    // Si no se encontró ruta, retorna null
+     Si no se encontró ruta, retorna null
     return null;
 
 
