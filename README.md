@@ -38,6 +38,7 @@ BuscadorRuta implementa los algoritmos para encontrar rutas en el laberinto.
 ![alt text](image-3.png)
  
 ## -- Ejemplo de codigo -- 
+{
 public Ruta buscarDFS() {
     // Obtiene el número de filas y columnas del laberinto
     int filas = laberinto.getFilas();
@@ -58,7 +59,7 @@ public Ruta buscarDFS() {
     // Si no se encontró ruta, retorna null
     return null;
 }
-
+}
 La función recursiva buscarDFSRec hace el trabajo real de recorrer el laberinto, y si encuentra el destino, el método retorna la ruta encontrada. Si no, retorna null.
 ## Conclusiones
 Después de implementar y probar los algoritmos, se concluye que:
