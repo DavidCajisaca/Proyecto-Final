@@ -1,8 +1,8 @@
-* -- Proyecto Laberinto MVC --
+# -- Proyecto Laberinto MVC --
 * -- Descripción del problema --
 El objetivo de este proyecto es desarrollar una aplicación que permita crear y resolver laberintos mediante diferentes algoritmos de búsqueda y recorrido. El usuario puede definir el tamaño del laberinto, seleccionar las celdas transitables o no transitables, establecer puntos de inicio y destino, y elegir entre distintos algoritmos para encontrar una ruta óptima entre esos puntos. 
 * -- Propuesta de solución --
-* Marco teórico 
+## Marco teórico 
 DFS (Depth-First Search):
 Algoritmo de búsqueda que explora tanto como sea posible por cada rama antes de retroceder (backtracking). Es recursivo o puede usarse con pila. Puede no ser óptimo para encontrar la ruta más corta, pero es simple y eficiente en memoria.
 
@@ -15,7 +15,7 @@ Técnica de prueba y error para construir soluciones paso a paso y descartar las
 Recursión:
 Técnica para resolver problemas dividiéndolos en subproblemas idénticos pero más pequeños. DFS es típicamente recursivo.
 
-* -- Tecnologías utilizadas -- 
+## -- Tecnologías utilizadas -- 
 Java: Lenguaje de programación principal.
 
 Swing: Para la interfaz gráfica de usuario.
@@ -37,7 +37,7 @@ BuscadorRuta implementa los algoritmos para encontrar rutas en el laberinto.
 * Laberinto 10x10 y metodo de recursividad 2 
 ![alt text](image-3.png)
  
-* -- Ejemplo de codigo -- 
+## -- Ejemplo de codigo -- 
 public Ruta buscarDFS() {
     // Obtiene el número de filas y columnas del laberinto
     int filas = laberinto.getFilas();
@@ -60,7 +60,7 @@ public Ruta buscarDFS() {
 }
 
 La función recursiva buscarDFSRec hace el trabajo real de recorrer el laberinto, y si encuentra el destino, el método retorna la ruta encontrada. Si no, retorna null.
-* Conclusiones
+## Conclusiones
 Después de implementar y probar los algoritmos, se concluye que:
 
 BFS es el más óptimo para encontrar la ruta más corta en laberintos sin ponderar, debido a su búsqueda por niveles y garantía de la menor cantidad de pasos.
@@ -69,7 +69,7 @@ DFS y Backtracking son útiles para explorar todas las posibles rutas o para pro
 
 Los algoritmos recursivos son intuitivos y fáciles de implementar, aunque para laberintos grandes pueden ser ineficientes en memoria.
 
-* Recomendaciones y aplicaciones futuras
+## Recomendaciones y aplicaciones futuras
 Implementar algoritmos heurísticos como A* para mejorar la eficiencia en laberintos grandes.
 
 Añadir visualización en tiempo real del proceso de búsqueda.
