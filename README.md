@@ -1,5 +1,6 @@
 ![alt text](image-4.png)
-### Materia: Estructura de datos              Nombre: Dennis Cajisaca     
+### Materia: Estructura de datos             
+### Nombre: Dennis Cajisaca     
 ### Correo: dcajisaca@est.ups.edu.ec
 
 # -- Proyecto Laberinto MVC --
